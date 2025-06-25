@@ -7,7 +7,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/m")
+      .get("http://localhost:4000/")
       .then((res) => setMovies(res.data))
       .catch((err) => console.log(err));
   }, []);

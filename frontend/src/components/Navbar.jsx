@@ -8,7 +8,7 @@ const Navbar = () => {
             className="navbar navbar-expand-sm navbar-dark bg-dark"
         >
             <div className="container">
-                <NavLink className="navbar-brand" to="/">Movie App</NavLink>
+                <NavLink className="navbar-brand" to="/">ASMovie</NavLink>
                 <button
                     className="navbar-toggler d-lg-none"
                     type="button"

@@ -14,7 +14,7 @@ const AddMovie = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:4000/m/add", movie)
+      .post("http://localhost:4000/add", movie)
       .then(() => navigate("/"))
       .catch((err) => console.log(err));
   };

@@ -14,7 +14,7 @@ const UpdateMovie = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/m/movie/${id}`)
+      .get(`http://localhost:4000/movie/${id}`)
       .then((res) => setMovie(res.data))
       .catch((err) => console.error(err));
   }, [id]);
@@ -26,7 +26,7 @@ const UpdateMovie = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .put(`http://localhost:4000/m/upa/${id}`, movie)
+      .put(`http://localhost:4000/upa/${id}`, movie)
       .then(() => navigate("/"))
       .catch((err) => console.error(err));
   };

@@ -9,14 +9,14 @@ const ShowMovie = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/m/movie/${id}`)
+      .get(`http://localhost:4000/movie/${id}`)
       .then((res) => setMovie(res.data))
       .catch((err) => console.log(err));
   }, [id]);
 
   const handleDelete = () => {
     axios
-      .delete(`http://localhost:4000/m/del/${id}`)
+      .delete(`http://localhost:4000/del/${id}`)
       .then(() => navigate("/"))
       .catch((err) => console.log(err));
   };
